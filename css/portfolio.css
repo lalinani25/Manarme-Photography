@@ -1,0 +1,133 @@
+/* General reset and base styles */
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+  }
+  
+  body {
+    font-size: 100%;
+    background-color: rgb(234, 229, 222);
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  /* Header styling */
+  #head {
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(234, 229, 222);
+  }
+  
+  #head img {
+    max-width: 20%; /* Makes the logo responsive */
+    height: auto;
+  }
+  
+  /* Navigation Bar Full Width */
+  nav {
+    background-color: #392f23;
+    width: 100%; /* Full width */
+    position: sticky; /* Keeps it at the top while scrolling */
+    top: 0;
+    z-index: 1000; /* Keeps the navigation bar on top of other content */
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  li {
+    border-right: 1px solid #bbb;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(234, 229, 222);
+    padding: 12px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  li a:hover {
+    background-color: rgba(29, 26, 26, 0.947);
+    transform: translateY(-3px); /* Slight lift effect */
+  }
+  
+  /* Main Content */
+  main {
+    width: 100%;
+    background-color: rgba(192, 183, 173, 0.418);
+    padding: 10px;
+    margin-top: -5px; /* Adjusted to avoid overlap with fixed header */
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .portfolio-item {
+    margin: 15px;
+    text-align: center;
+  }
+  
+  #portfolio {
+    width: 356px;
+    height: 512px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  #portfolioText {
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  p {
+    margin: 10px;
+    font-size: 16px;
+  }
+  
+  /* Footer styling */
+  footer {
+    background-color: rgb(234, 229, 222);
+    text-align: center;
+    color: #585656;
+    padding: 20px 0;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  footer img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: slideUp 0.8s 0.5s ease-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

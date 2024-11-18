@@ -2,63 +2,73 @@
 <html lang="en">
 
 <head>
-    <title></title>
-    <link href="../css/problem5.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manarme Photography</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet" />
 </head>
 
 <body>
     <header>
         <div id="head">
-            <img src="../images/Logo.png" width="232.6" height="48.4">
+            <img src="../images/Logo.png" alt="Manarme Photography Logo">
         </div>
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../htlm/portfolio.html">Portfolio</a></li>
-                <li><a href="../htlm/blog.html">Blog</a></li>
-                <li><a href="../htlm/about.html">About</a></li>
-                <li><a href="../htlm/contact.html">Contact</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./html/portfolio.html">Portfolio</a></li>
+                <li><a href="./html/blog.html">Blog</a></li>
+                <li><a href="./html/about.html">About</a></li>
+                <li><a href="./html/contact.html">Contact</a></li>
             </ul>
         </nav>
-
     </header>
 
     <main>
-
-        <img src="../images/11.jpg" id="banner" width="1118.2" height="480.5">
-
+        <img src="../images/11.jpg" id="banner" alt="Scenic View" class="responsive-image">
         <p id="text">July 2022 ~ Sarande, Albania</p>
 
-        <h2>One piece of Art for one piece of Heart</h2>
-        <div id="indexText">
-
+        <h2 data-aos="fade-up">One piece of Art for one piece of Heart</h2>
+        <div id="indexText" data-aos="fade-right">
             <p>Manarme Photography is all about capturing random pictures at random moments.</p>
-            <p>Every place is worth a click of your camera. </p>
+            <p>Every place is worth a click of your camera.</p>
             <p>You just have to try it.</p>
-
         </div>
 
-        <div>
-            <img src="../images/12.jpg" width="384" height="430" id="img12">
-            <img src="../images/21.jpg" width="384" height="430" id="img21">
+        <!-- Image gallery with Lightbox -->
+        <div class="image-gallery">
+            <div class="image-container">
+                    <img src="../images/12.jpg" alt="Image 1" id="img12">
+                </a>
+                <p id="text12">August 2022 ~ San Francisco, California</p>
+            </div>
+
+            <div class="image-container">
+                    <img src="../images/21.jpg" alt="Image 2" id="img21">
+                </a>
+                <p id="text12">March 2022 ~ Flagler Beach, Florida</p>
+            </div>
         </div>
 
-        <p id="text12">March 2022 ~ Flagler Beach, Florida
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
-            August 2022 ~ San Francisco, California</p>
+        <p id="indexText">If you want to explore more about Manarme Photography, go to the portfolio page!</p>
 
-        <p id="indexText"> If you want to explore more about Manarme Photography, go to the portfolio page!</p>
-
-
-        <a href="../htlm/portfolio.html">
+        <a href="./html/portfolio.html" style="text-decoration: none;">
             <p id="portfoliotxt">Portfolio</p>
         </a>
     </main>
 
     <footer>
-        <p>Find us in social media!</p>
-        <img src="../images/Social Media.webp" width="93 px" height="93px" id="socialMedia">
+        <p>&copy;2024 Manarme Photography</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        // Initialize AOS (for scroll animations)
+        AOS.init();
+    </script>
 </body>
 
 </html>
